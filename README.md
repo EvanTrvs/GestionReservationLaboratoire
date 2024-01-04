@@ -1,4 +1,4 @@
-Ppplication pour la réservation et le paiement de visites dans un laboratoire d’analyses
+Application pour les fonctionnalité cliente dans un laboratoire d’analyses
 
  L’objectif est de mettre en œuvre une application pour la réservation et le paiement de visites dans un laboratoire d’analyses. Un développement en Java avec une interface graphique liée à une base de données MySql via Hibernate qui permet les traitements de base requis pour le système.
 
