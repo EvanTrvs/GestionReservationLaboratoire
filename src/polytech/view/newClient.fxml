@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Author : EvanT
+  FXML view from Clocking Java Project Polytech 2020/2023
+  This file match control with CRUDSessionController.java
+  Represent details and modifications access to an employee scheduled session
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="600.0" prefWidth="0.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+<AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="591.0" prefWidth="716.0">
+  <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a5d4ff" height="299.0" layoutX="71.0" layoutY="101.0" stroke="BLACK" strokeType="INSIDE" width="541.0" />
+    <Label alignment="CENTER" layoutX="14.0" layoutY="3.0" prefHeight="34.0" prefWidth="699.0" style="&#10;" text="Nouveau Compte Patient" textAlignment="CENTER" wrapText="false">
+               <font>
+                  <Font size="30.0" />
+               </font></Label>
+            <Label layoutX="232.0" layoutY="147.0" prefHeight="27.0" prefWidth="220.0" text="Numero de sécurité social :" textAlignment="RIGHT" />
+            <TextField fx:id="id" layoutX="232.0" layoutY="174.0" prefHeight="25.0" prefWidth="220.0" promptText="Chiffres 1-9" text="1111" />
+            <Button fx:id="connexionButton" layoutX="8.0" layoutY="540.0" mnemonicParsing="false" onAction="#connexionButton" prefHeight="45.0" prefWidth="522.0" text="Valider" />
+            <Label layoutX="104.0" layoutY="325.0" prefHeight="27.0" prefWidth="211.0" text="Mot de passe :" />
+            <TextField fx:id="password" layoutX="104.0" layoutY="352.0" prefHeight="25.0" prefWidth="220.0" promptText="défaut = password" text="password" />
+            <Button fx:id="cancelButton" layoutX="534.0" layoutY="540.0" mnemonicParsing="false" onAction="#cancelButton" prefHeight="45.0" prefWidth="173.0" text="Retour" />
+            <Label contentDisplay="RIGHT" layoutX="79.0" layoutY="111.0" prefHeight="27.0" prefWidth="478.0" text="Informations">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="130.0" layoutY="325.0" />
+            <Text fx:id="error" fill="RED" layoutX="71.0" layoutY="499.0" strokeType="OUTSIDE" strokeWidth="0.0" text="." wrappingWidth="541.0">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </Text>
+            <Label layoutX="357.0" layoutY="326.0" prefHeight="27.0" prefWidth="211.0" text="Vérification Mot de passe :" />
+            <TextField fx:id="password1" layoutX="357.0" layoutY="353.0" prefHeight="25.0" prefWidth="220.0" promptText="défaut = password" text="password" />
+            <Label layoutX="232.0" layoutY="209.0" prefHeight="27.0" prefWidth="220.0" text="Nom de famille :" textAlignment="RIGHT" />
+            <TextField fx:id="nom" layoutX="232.0" layoutY="236.0" prefHeight="25.0" prefWidth="220.0" promptText="Chiffres 1-9" text="Jean" />
+            <Label layoutX="232.0" layoutY="270.0" prefHeight="27.0" prefWidth="220.0" text="Prénom :" textAlignment="RIGHT" />
+            <TextField fx:id="prenom" layoutX="232.0" layoutY="297.0" prefHeight="25.0" prefWidth="220.0" promptText="Chiffres 1-9" text="Michel" />
+  </children>
+</AnchorPane>
+  </children>
+</VBox>

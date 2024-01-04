@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Author : EvanT
+  FXML view from Clocking Java Project Polytech 2020/2023
+  This file match control with CRUDSessionController.java
+  Represent details and modifications access to an employee scheduled session
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="600.0" prefWidth="0.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+<AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="591.0" prefWidth="716.0">
+  <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffeba6" height="155.0" layoutX="71.0" layoutY="101.0" stroke="BLACK" strokeType="INSIDE" width="541.0" />
+    <Label alignment="CENTER" layoutX="14.0" layoutY="3.0" prefHeight="34.0" prefWidth="699.0" style="&#10;" text="Paiement de consultation" textAlignment="CENTER" wrapText="false">
+               <font>
+                  <Font size="30.0" />
+               </font></Label>
+            <Button fx:id="validButton" layoutX="8.0" layoutY="540.0" mnemonicParsing="false" onAction="#validButton" prefHeight="45.0" prefWidth="522.0" text="Valider le paiement" />
+            <Button fx:id="cancelButton" layoutX="534.0" layoutY="540.0" mnemonicParsing="false" onAction="#cancelButton" prefHeight="45.0" prefWidth="173.0" text="Retour" />
+            <Label contentDisplay="RIGHT" layoutX="79.0" layoutY="111.0" prefHeight="27.0" prefWidth="478.0" text="Informations de facturation">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="130.0" layoutY="325.0" />
+            <Text fx:id="error" fill="RED" layoutX="71.0" layoutY="499.0" strokeType="OUTSIDE" strokeWidth="0.0" text="." wrappingWidth="541.0">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a5d4ff" height="235.0" layoutX="71.0" layoutY="261.0" stroke="BLACK" strokeType="INSIDE" width="541.0" />
+            <Label contentDisplay="RIGHT" layoutX="79.0" layoutY="266.0" prefHeight="27.0" prefWidth="478.0" text="Informations paiement">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="98.0" layoutY="164.0" prefHeight="27.0" prefWidth="211.0" text="Coût (€) :" />
+            <TextField fx:id="cout" layoutX="98.0" layoutY="191.0" prefHeight="25.0" prefWidth="220.0" promptText="null" text="null" />
+            <Label layoutX="98.0" layoutY="299.0" prefHeight="27.0" prefWidth="220.0" text="Numero de sécurité social :" textAlignment="RIGHT" />
+            <TextField fx:id="id" layoutX="98.0" layoutY="326.0" prefHeight="25.0" prefWidth="220.0" promptText="Chiffres 1-9" text="111223344" />
+            <Label layoutX="353.0" layoutY="299.0" prefHeight="27.0" prefWidth="220.0" text="Nom de la Carte de crédit" textAlignment="RIGHT" />
+            <TextField fx:id="nom" layoutX="353.0" layoutY="326.0" prefHeight="25.0" prefWidth="220.0" promptText="lettre" text="CLAIRE" />
+            <Label layoutX="98.0" layoutY="359.0" prefHeight="27.0" prefWidth="220.0" text="Numéro de Carte de crédit" textAlignment="RIGHT" />
+            <TextField fx:id="code" layoutX="98.0" layoutY="386.0" prefHeight="25.0" prefWidth="478.0" promptText="Chiffres 1-9" text="5005 5656 0000 0000 0000" />
+            <Label layoutX="98.0" layoutY="421.0" prefHeight="27.0" prefWidth="220.0" text="Date expiration" textAlignment="RIGHT" />
+            <TextField fx:id="exp" layoutX="98.0" layoutY="448.0" prefHeight="25.0" prefWidth="220.0" promptText="MM/YY" text="09/26" />
+            <Label layoutX="353.0" layoutY="422.0" prefHeight="27.0" prefWidth="220.0" text="Cryptograme visuel" textAlignment="RIGHT" />
+            <TextField fx:id="crypt" layoutX="353.0" layoutY="449.0" prefHeight="25.0" prefWidth="220.0" promptText="3 chiffre" text="687" />
+            <Label layoutX="364.0" layoutY="165.0" prefHeight="27.0" prefWidth="211.0" text="ID consultation" />
+            <TextField fx:id="consul" layoutX="364.0" layoutY="192.0" prefHeight="25.0" prefWidth="220.0" promptText="null" text="null" />
+  </children>
+</AnchorPane>
+  </children>
+</VBox>
